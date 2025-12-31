@@ -2,8 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "A new game developed with the new user interface",
-  "main": "index.js",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +14,16 @@
     "mongodb"
   ],
   "author": "sunny",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.21.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11",
+    "socket.io": "^4.8.3"
+  }
 }
